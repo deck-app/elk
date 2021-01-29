@@ -1,0 +1,12 @@
+version: "3"
+services:
+  elk:
+    image: "sebp/elk"
+    restart: "always"
+    ports:
+      - "${ES_PORT}:5601"
+      - "${LOGSTASH_PORT}:9200"
+      - "${KIBANA_PORT}:5044"
+    volumes:
+      - "${DATA_PATH_HOST}:/var/lib/elasticsearch"
+volumes: {}
