@@ -45,7 +45,7 @@ system:
   #   true
   #Generate public ports for the docker image
   ports:
-    http: ES_PORT
+    http: KIBANA_HTTP_PORT
     others:
-      - LOGSTASH_PORT
-      - KIBANA_PORT
+      - ELASTICS_REST_PORT
+      - ELASTICS_NODE_COMMUNICATION_PORT
