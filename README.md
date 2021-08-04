@@ -1,5 +1,6 @@
 # Elastic stack (ELK)
 
+# Note:- wait time 10 minute
 Run the latest version of the [Elastic stack][elk-stack] with Docker and Docker Compose.
 
 It gives you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch and
