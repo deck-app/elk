@@ -45,7 +45,6 @@ services:
       context: kibana/
       args:
         ELK_VERSION: $ELK_VERSION
-    volumes:
     ports:
       - '${KIBANA_HTTP_PORT}:5601'
     depends_on:
